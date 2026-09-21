@@ -55,3 +55,9 @@ button:active {
   transform: translateY(6px);
   box-shadow: 0px 2px 0px #333, 0px 5px 8px rgba(0, 0, 0, 0.2);
 }
+
+.btn-reset {
+  background-color: #6c757d;
+  box-shadow: 0px 8px 0px #494f54, 0px 12px 15px rgba(0, 0, 0, 0.2);
+  font-size: 32px; /* Un poco más pequeño para que el '0' luzca bien */
+}

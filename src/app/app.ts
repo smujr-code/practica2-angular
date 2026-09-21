@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
+
 export class App {
   contador: number = 0;
 
@@ -16,4 +17,10 @@ export class App {
   disminuir() {
     this.contador--;
   }
+
+  reiniciar() {
+    this.contador = 0;
+  }
+
 }
+
