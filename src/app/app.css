@@ -1,38 +1,57 @@
-/* Contenedor de los botones */
-div {
+
+.contenedor-contador {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  gap: 20px;
-  margin-top: 30px;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f9;
+  margin: 0;
 }
 
-/* Estilo base compartido para ambos botones 3D */
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.valor-contador {
+  font-size: 72px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 30px;
+}
+.grupo-botones {
+  display: flex;
+  gap: 20px;
+}
+
 button {
-  width: 90px;
-  height: 90px;
-  font-size: 48px;
+  width: 80px;
+  height: 80px;
+  font-size: 40px;
   font-weight: bold;
   color: white;
   border: none;
-  border-radius: 20px;
+  border-radius: 16px;
   cursor: pointer;
-  transition: transform 0.1s ease, box-shadow 0.1s ease;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
 }
 
 .btn-menos {
-  background-color: #cc1e2d;
-  box-shadow: 0px 10px 0px #8b101b, 0px 15px 20px rgba(0, 0, 0, 0.3);
+  background-color: #dc3545;
+  box-shadow: 0px 8px 0px #b02a37, 0px 12px 15px rgba(0, 0, 0, 0.2);
 }
 
 .btn-mas {
-  background-color: #28a745;
-  box-shadow: 0px 10px 0px #19692c, 0px 15px 20px rgba(0, 0, 0, 0.3);
+  background-color: #198754;
+  box-shadow: 0px 8px 0px #146c43, 0px 12px 15px rgba(0, 0, 0, 0.2);
 }
 
 button:active {
   transform: translateY(6px);
-  box-shadow: 0px 4px 0px #444, 0px 8px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 0px #333, 0px 5px 8px rgba(0, 0, 0, 0.2);
 }

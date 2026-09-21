@@ -1,13 +1,8 @@
-<div style="text-align: center; margin-top: 50px; font-family: Arial, sans-serif;">
-  <h1>Práctica No. 2 - Contador</h1>
-  <div style="font-size: 48px; margin: 20px; font-weight: bold;">
-    {{ contador }}
-  </div>
-
-  <div>
-
+<div class="contenedor-contador">
+  <h1>Práctica No.2> Contador</h1>
+  <div class="valor-contador">{{ contador }}</div>
+  <div class="grupo-botones">
     <button (click)="disminuir()" class="btn-menos">-</button>
     <button (click)="incrementar()" class="btn-mas">+</button>
-    
   </div>
 </div>
